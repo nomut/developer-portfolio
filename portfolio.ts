@@ -12,12 +12,10 @@ import {
 } from './types/sections';
 
 export const greetings: GreetingsType = {
-  name: 'Hanzla Tauqeer',
-  title: "Hi all, I'm Hanzla",
-  description:
-    "I'm passionate Full Stack web developer having an experience of web applications with Python, Django, React.js, Next.js and Blockchain development on Ethereum, Solidity, Web3.js, Moralis, and Brownie Framework.",
-  resumeLink:
-    'https://docs.google.com/document/d/1_4RIfbyt4FFHW_bNplnoINQr01neTu7XDeeUlT_2O_k/edit?usp=sharing',
+  name: "",
+  title: "PT Pemuda Pemudi Nusantara",
+  description: "We are a new company formed in 2022. Our vision and mission is to create a systematic world for all business sectors to help the world economy.",
+  resumeLink: '',
 };
 
 export const openSource = {
@@ -27,12 +25,12 @@ export const openSource = {
 export const contact = {};
 
 export const socialLinks: SocialLinksType = {
-  url: 'https://1hanzla100.github.io/',
-  linkedin: 'https://www.linkedin.com/in/1hanzla100/',
-  github: 'https://github.com/1hanzla100',
-  instagram: 'https://www.instagram.com/__hanzla100',
-  facebook: 'https://www.facebook.com/1hanzla100',
-  twitter: 'https://twitter.com/1hanzla100',
+//   url: 'https://pemudapemudi.com/',
+//   linkedin: 'https://www.linkedin.com/in/1hanzla100/',
+//   github: 'https://github.com/1hanzla100',
+//   instagram: 'https://www.instagram.com/__hanzla100',
+//   facebook: 'https://www.facebook.com/1hanzla100',
+//   twitter: 'https://twitter.com/1hanzla100',
 };
 
 export const skillsSection: SkillsSectionType = {
@@ -299,19 +297,13 @@ export const showContactUs: boolean = true;
 
 // See object prototype on /types/section.ts page
 export const seoData: SEODataType = {
-  title: 'Hanzla Tauqeer',
-  description:
-    'A passionate Full Stack Web Developer and Blockchain Developer.',
-  author: 'Hanzla Tauqeer',
+  title: 'PT Pemuda Pemudi Nusantara',
+  description: 'We are a new company formed in 2022. Our vision and mission is to create a systematic world for all business sectors to help the world economy.',
+  author: 'Noval Satria',
   image: 'https://avatars3.githubusercontent.com/u/59178380?v=4',
   url: 'https://developer-portfolio-1hanzla100.vercel.app',
   keywords: [
-    'Hanzla',
-    'Hanzla Tauqeer',
-    '@1hanzla100',
-    '1hanzla100',
-    'Portfolio',
-    'Hanzla Portfolio ',
-    'Hanzla Tauqeer Portfolio',
+    'PT Pemuda Pemudi Nusantara',
+    'Pemuda Pemudi Nusantara'
   ],
 };

@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+
 import emailjs from '@emailjs/browser';
 import classnames from 'classnames';
 import Alert from './Alerts';
@@ -78,78 +79,36 @@ export const ContactUs = () => {
   return (
     <>
       <section className="section section-lg section-shaped">
-        <form ref={form} onSubmit={sendEmail}>
-          {alert && (
-            <Alert
-              color={alert.color}
-              icon={alert.icon}
-              message={alert.message}
-            />
-          )}
           <Container>
             <Row className="justify-content-center">
               <Col lg="8">
                 <Card className="bg-gradient-secondary shadow">
                   <CardBody className="p-lg-5">
-                    <h4 className="mb-1">Want to work with me?</h4>
-                    <p className="mt-0">
-                      Reach out to me using the form below.
-                    </p>
-                    <FormGroup className={classnames('mt-5', {})}>
-                      <InputGroup className="input-group-alternative">
-                        <InputGroupAddon addonType="prepend">
-                          <InputGroupText>
-                            <i className="ni ni-user-run" />
-                          </InputGroupText>
-                        </InputGroupAddon>
-                        <Input
-                          placeholder="Your name"
-                          type="text"
-                          name="user_name"
-                        />
-                      </InputGroup>
-                    </FormGroup>
-                    <FormGroup className={classnames({})}>
-                      <InputGroup className="input-group-alternative">
-                        <InputGroupAddon addonType="prepend">
-                          <InputGroupText>
-                            <i className="ni ni-email-83" />
-                          </InputGroupText>
-                        </InputGroupAddon>
-                        <Input
-                          placeholder="Email address"
-                          name="user_email"
-                          type="email"
-                        />
-                      </InputGroup>
-                    </FormGroup>
-                    <FormGroup className="mb-4">
-                      <Input
-                        className="form-control-alternative"
-                        cols="80"
-                        name="user_message"
-                        placeholder="Type a message..."
-                        rows="4"
-                        type="textarea"
-                      />
-                    </FormGroup>
-                    <div>
-                      <Button
-                        block
-                        className="btn-round"
-                        color="default"
-                        size="lg"
-                        type="submit"
-                      >
-                        Send Message
-                      </Button>
-                    </div>
+                    <Row className="justify-content-center">
+                        <Col lg="4">
+                            <img
+                            src="/img/logo.png"
+                            style={{ width: '200px' }}
+                            alt="Pemuda Pemudi Nusantara"
+                            className="rounded-circle img-center img-fluid shadow shadow-lg--hover mb-4 p-4"
+                            />
+                        </Col>
+                        <Col lg="8">
+                        <h2 className="mb-3">Contacts Us</h2>
+                            <h6>Email: contact@pemudapemudi.com</h6>
+                            <a href="https://g.page/r/CbellkBVx4YFEAI" target="_blank" rel="noreferrer" className="my-3 icon-shape bg-gradient-white shadow rounded text-info">
+                                <i className="ni ni-pin-3 text-info mr-2" /> Yogyakarta, Indonesia
+                            </a>
+                        </Col>
+                    </Row>
                   </CardBody>
                 </Card>
               </Col>
             </Row>
           </Container>
-        </form>
+      </section>
+      <section className="text-center p-2 m-2">
+        © Pemuda Pemudi Nusantara, ALL RIGHTS RESERVED.
       </section>
     </>
   );
